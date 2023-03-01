@@ -64,3 +64,13 @@ model VerificationToken {
 
     @@unique([identifier, token])
 }
+
+model Boardgame {
+    id          String  @id @default(cuid())
+    name        String
+    description String? // @db.Text
+    image       String?
+    bggLink     String?
+    length      Int?
+    rounds      Int?
+}
