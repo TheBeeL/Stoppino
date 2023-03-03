@@ -20,5 +20,9 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "cf.geekdo-images.com" }],
+  },
 };
 export default config;
